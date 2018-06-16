@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<title>Bookmarks</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/index.css">
+<main class="main">
+  <h1>Bookmarks</h1>
+  <form id="form" action="results.html">
+    <h2>Add a bookmark</h2>
+    <div class="form-wrapper">
+      <div class="field">
+        <label>URL</label>
+        <input type="url" name="bookmark" id="input">
+        <p class="error"></p>
+      </div>
+      <button type="submit" class="button-add">Add</button>
+    </div>
+  </form>
+  <section id="results">
+    <p>Loading bookmarks...
+  </section>
+  <section id="pagination">
+  </section>
+</main>
+<script id="template-list-item" type="text/template">
+  <a href="{{bookmark}}" target="_blank" class="link-bookmark">{{bookmark}}</a>
+  <button class="button-edit" data-action="edit">Edit</button>
+  <button class="button-delete" data-action="delete">Delete</button>
+</script>
+<script id="template-list-item-edit" type="text/template">
+  <form>
+    <div class="form-wrapper">
+      <div class="field">
+        <input type="url" class="input" name="bookmark-edit" value="{{bookmark}}">
+        <p class="error"></p>
+      </div>
+      <button class="button-save" data-action="save">Save</button>
+    </div>
+  </form>
+</script>
+<script src="scripts/index-min.js"></script>
