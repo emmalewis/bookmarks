@@ -13,7 +13,7 @@ as well as a couple of util functions for url validation and querystring paramet
 The JavaScript is minified using [Google's closure compiler](https://developers.google.com/closure/compiler/docs/api-tutorial3) with a compilation level of `ADVANCED`.
 
 ## TODO
-- Add spinning/progress animation when checking if url exists
+- Disable save/add button when clicked and add spinning/progress animation while checking if url exists
 - Add search functionality
 - When checking if bookmark already exists include variations for protocol / www presence / trailing slashes
 - Add description field
